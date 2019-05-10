@@ -6,7 +6,7 @@
 # User-specific stuff
 .idea
 
-
+target
 
 
 # CMake
@@ -89,3 +89,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+
+*.iml
