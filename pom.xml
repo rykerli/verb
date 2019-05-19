@@ -16,6 +16,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
     </properties>
 
     <groupId>com.red.verb</groupId>
@@ -25,9 +26,12 @@
     <modules>
         <module>wechat</module>
         <module>ali</module>
-        <module>redis</module>
         <module>utils</module>
         <module>common</module>
+        <module>model</module>
+        <module>dao</module>
+        <module>eureka</module>
+        <module>config</module>
     </modules>
     <dependencies>
 
