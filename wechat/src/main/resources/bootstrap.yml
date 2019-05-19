@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: wechat
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@localhost:8801/eureka/
+#      defaultZone: http://localhost:8801/eureka/
