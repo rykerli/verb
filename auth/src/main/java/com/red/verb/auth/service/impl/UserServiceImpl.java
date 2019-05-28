@@ -1,9 +1,8 @@
-package com.red.verb.service.impl;
+package com.red.verb.auth.service.impl;
 
-import com.red.verb.auth.dao.UserDao;
-import com.red.verb.commom.base.BaseServiceImpl;
-import com.red.verb.model.User;
-import com.red.verb.service.UserService;
+import com.red.verb.auth.repository.UserRepository;
+import com.red.verb.auth.service.UserService;
+import com.red.verb.auth.model.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,10 +20,16 @@ import java.util.List;
  * @since 1.0.0
  */
 @Service
-public class UserServiceImpl extends BaseServiceImpl<UserDao, User> implements UserService {
+public class UserServiceImpl implements UserService {
+	private final UserRepository userRepository;
+
+	public UserServiceImpl(UserRepository userRepository) {
+		this.userRepository = userRepository;
+	}
+
 	@Override
 	public User getUser(String username) {
-		return null;
+		return userRepository.findByUserName(username);
 	}
 
 	@Override

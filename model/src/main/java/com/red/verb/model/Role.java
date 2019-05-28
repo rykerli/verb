@@ -2,6 +2,10 @@ package com.red.verb.model;
 
 import lombok.Data;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  * Role
  * <pre>
@@ -15,9 +19,21 @@ import lombok.Data;
  * @since 1.0.0
  */
 @Data
-public class Role {
-	private String roleId;
 
-	private String role;
+@Table(name = "role")
+public class Role {
+	private static final long serialVersionUID = 6382925944937625109L;
+
+	/**
+	 * ID
+	 */
+	@Id
+	@GeneratedValue(generator = "JDBC")
+	private Integer id;
+
+	/**
+	 * 角色名称
+	 */
+	private String name;
 
 }

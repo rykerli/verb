@@ -1,7 +1,6 @@
-package com.red.verb.service;
+package com.red.verb.auth.service;
 
-import com.red.verb.commom.base.BaseService;
-import com.red.verb.model.User;
+import com.red.verb.auth.model.User;
 
 import java.util.List;
 
@@ -17,7 +16,7 @@ import java.util.List;
  * @version 1.0.0 2019-05-25 13:53
  * @since 1.0.0
  */
-public interface UserService extends BaseService<User> {
+public interface UserService {
 	User getUser(String username);
 
 	List<User> listUser();

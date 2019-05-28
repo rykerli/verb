@@ -2,11 +2,15 @@ spring:
   application:
     name: auth
   datasource:
-    url: jdbc:mysql://112.74.36.53:3306/test?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    url: jdbc:mysql://112.74.36.53:3306/shiro?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
     username: root
     password: redli9600,.0@
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://admin:admin@eureka.iredred.cn/eureka/
-#      defaultZone: http://eureka.iredred.cn/eureka/

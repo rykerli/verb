@@ -6,12 +6,9 @@ spring:
       server:
         git:
           uri: git@github.com:redlix/verb/config.git
-          #          uri: git@gitee.com:lixred/config-repo.git
           username: 405149812@qq.com
-          #          password: lxh1530675447@
           password: lxh1530675447
           basedir: /home/workspace/JavaWeb/verb/config
-#          uri: https://gitee.com/lixred/config-repo.git
 eureka:
   client:
     service-url:
